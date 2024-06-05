@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="FastackAdvanceSelenium.flipkart"></listener>
+	</listeners>
+  <test thread-count="5" name="Test1">
+    <classes>
+      <class name="TestNgFashion.myntra"/>
+      <class name="TestNG.demoWeb"/>
+      <class name="TestNgFashion.flipkart"/>
+      <class name="TestNG.makeMyTrip"/>
+      <class name="TestNG.redBus"/>
+      <class name="TestNgFashion.ajio"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test thread-count="5" name="Test2">
+		<parameter name="URL" value="https://www.redbus.in/"></parameter>
+		
+    <classes>
+      <class name="TestNgFashion.myntra"/>
+      <class name="TestNG.demoWeb"/>
+      <class name="TestNgFashion.flipkart"/>
+      <class name="TestNG.makeMyTrip"/>
+      <class name="TestNG.redBus"/>
+      <class name="TestNgFashion.ajio"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
